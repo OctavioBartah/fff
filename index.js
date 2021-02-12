@@ -726,7 +726,7 @@ const getRegisteredRandomId = () => {
 				case 'infogrup':
 				case 'grupinfo':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
                 client.updatePresence(from, Presence.composing)
                 if (!isGroup) return reply(mess.only.group)
                 ppUrl = await client.getProfilePicture(from)
@@ -762,7 +762,7 @@ const getRegisteredRandomId = () => {
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
-                   if (!isUser) return reply(mess.only.userB)
+           //        if (!isUser) return reply(mess.only.userB)
                    if (isLimit(sender)) return reply(limitend(pushname2))
                    if (isBanned) return reply(mess.only.benned)
                    if (!isGroup) return reply(mess.only.group)
@@ -780,7 +780,7 @@ const getRegisteredRandomId = () => {
 				case 'neonime':
 					client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/neonime_lastest`, {method: 'get'})
-                    if (!isUser) return reply(mess.only.userB)
+             //       if (!isUser) return reply(mess.only.userB)
                     if (isLimit(sender)) return reply(limitend(pushname2))
                     if (isBanned) return reply(mess.only.benned)
                     if (!isGroup) return reply(mess.only.group)
@@ -834,7 +834,7 @@ const getRegisteredRandomId = () => {
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hug?apikey=${TobzApi}`, {method: 'get'})
-                   if (!isUser) return reply(mess.only.userB)
+          //         if (!isUser) return reply(mess.only.userB)
                    if (isLimit(sender)) return reply(limitend(pushname2))
                    if (isBanned) return reply(mess.only.benned)
                    if (!isGroup) return reply(mess.only.group)
@@ -855,7 +855,7 @@ const getRegisteredRandomId = () => {
 				case 'gruplink':
 				case 'grouplink':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				    if (!isGroup) return reply(mess.only.group)
 				    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				    linkgc = await client.groupInviteCode (from)
@@ -864,7 +864,7 @@ const getRegisteredRandomId = () => {
 			        break
 				case 'hidetag':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					var value = body.slice(9)
@@ -940,7 +940,7 @@ const getRegisteredRandomId = () => {
 					break
 				case 'unblock':
                     if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+	//			if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 				    client.blockUser (`${body.slice(9)}@c.us`, "remove")
@@ -986,7 +986,7 @@ const getRegisteredRandomId = () => {
                 break
 				case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return client.sendMessage(from, 'Qual código de idioma, mano?\n Se você não sabe o código do idioma, basta digitar *${prefix}bahasa*', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
@@ -1186,7 +1186,7 @@ const getRegisteredRandomId = () => {
                     break
 				case 'meme':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 				reply(mess.wait)
 					meme = await kagApi.memes()
@@ -1196,7 +1196,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'memeindo':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 				reply(mess.wait)
 					memein = await fetchJson(`https://api.zeks.xyz/api/memeindo?apikey=${ZeksApi}`)
@@ -1206,7 +1206,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'ssweb':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					teks = `${body.slice(7)}`
@@ -1219,7 +1219,7 @@ const getRegisteredRandomId = () => {
 				case 'loli':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
+			//	    if (!isUser) return reply(mess.only.userB)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${TobzApi}`, {method: 'get'})
@@ -1234,7 +1234,7 @@ const getRegisteredRandomId = () => {
 			    case 'blowjob':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
+			//	    if (!isUser) return reply(mess.only.userB)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
@@ -1250,7 +1250,7 @@ const getRegisteredRandomId = () => {
 			    case 'neko':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
+			//	    if (!isUser) return reply(mess.only.userB)
 								if (!isGroupAdmins) return reply(mess.only.admin)		    
 				    if (isLimit(sender)) return reply(limitend(pushname2))
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
@@ -1266,7 +1266,7 @@ const getRegisteredRandomId = () => {
 				case 'trap':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
+			//	    if (!isUser) return reply(mess.only.userB)
 		                	if (!isGroupAdmins) return reply(mess.only.admin)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR * ')
@@ -1282,7 +1282,7 @@ const getRegisteredRandomId = () => {
 				case 'hentai':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
-				    if (!isUser) return reply(mess.only.userB)
+			//	    if (!isUser) return reply(mess.only.userB)
 								if (!isGroupAdmins) return reply(mess.only.admin)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
@@ -1768,7 +1768,7 @@ const getRegisteredRandomId = () => {
 					break  
 				case 'ttp':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (args.length < 1) return reply('*Textnya mana om?*')
 					ranp = getRandom('.png')
