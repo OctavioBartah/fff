@@ -1,9 +1,5 @@
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
 	return `
-	
-
-
-
 ❉❉❉「 *${name}* 」❉❉❉
 ❉  ┴
 ❉  │➻ *${prefix}info*
@@ -117,8 +113,8 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}leave*
 ❉ ╰───────────────
 ❉ ❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉
- *o loli_senpai é grátis somente no grupo otakus sem curso se quiser contratar para seu grupo chame no PV da Loli* 
-❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉`
+ *O loli_senpai é grátis somente no grupo otakus sem curso se quiser contratar para seu grupo chame no PV da Loli* 
+❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉`
 }
 
 exports.help = help
