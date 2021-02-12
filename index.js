@@ -225,7 +225,7 @@ const getRegisteredRandomId = () => {
             ]
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511963386276@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["5511963386276@s.whatsapp.net"] || ["5573999881974@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -459,7 +459,7 @@ const getRegisteredRandomId = () => {
 			case 'help':
 			case 'menu':
 			if (isBanned) return reply(mess.only.benned)
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				uptime = process.uptime()
 				user.push(sender)
 				myMonths = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
@@ -477,7 +477,7 @@ const getRegisteredRandomId = () => {
 
 				case 'bahasa':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				client.sendMessage(from, bahasa(), text, {quoted: mek})
 				break
 				case 'donuuasi':
@@ -488,7 +488,7 @@ const getRegisteredRandomId = () => {
 					me = client.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `⟩➢ *Nome Bot* : ${me.name}\n⟩➢ *Numero Bot* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Lorde Screamo* : ${kyun(uptime)}\n\n⟩➢ Total Do Utilizador: *${user.length}* Usuario\n⟩➢ *Instagram* : https://www.instagram.com/lordescreamocanal/\n⟩➢ *Special Agradecimentos * :\n⟩➢ Deus \n⟩➢ Jesus`
+					teks = `⟩➢ *Nome Bot* : ${me.name}\n⟩➢ *Numero Bot* : @${me.jid.split('@')[0]}\n⟩➢ *prefix* : | ${prefix} |\n⟩➢ *Total Block* : ${blocked.length}\n⟩➢ *Lorde Screamo* : ${kyun(uptime)}\n\n⟩➢ Total Do Utilizador: *${user.length}* Usuario\n⟩➢ *Special Agradecimentos * :\n⟩➢ Deus \n⟩➢ Jesus`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -539,6 +539,7 @@ const getRegisteredRandomId = () => {
 				case 'stiker':
 				case 'sticker':
 				case 's':
+				case 'fig':
 						if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
