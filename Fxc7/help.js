@@ -9,7 +9,7 @@ https://www.instagram.com/lordescreamocanal/
 \`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
 \`\`\`USANDO O BOT\`\`\`
 
-
+❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉
 ╭──────「 *SOBRE ${name}* 」
 ┴
 │➻ *${prefix}report lapor bug* primeira git termux com antilink
