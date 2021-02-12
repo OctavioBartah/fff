@@ -7,10 +7,10 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 \`\`\`USANDO O BOT\`\`\`
 
 ❉❉❉ LOLI_SENPAI ❉❉❉
-❉.        
-❉.         ❉ Menu ❉
+❉        
+❉        ❉ Menu ❉
 ❉
-❉ ╭─❉ MÍDIA DOWNLOAD ❉────
+❉ ╭─❉ MIDIA DOWNLOAD ❉────
 ❉  |
 ❉  |➻ ${prefix}meme
 ❉  |➻ ${prefix}memeindo
@@ -31,7 +31,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ ${prefix}ocr     
 ❉ ╰────────────
 ❉
-❉ ╭─ ❉ MÍDIA GRUPO ❉────. 
+❉ ╭─ ❉ MIDIA GRUPO ❉────. 
 ❉ │
 ❉ │➻ ${prefix}modeanime On/Off
 ❉ │➻ ${prefix}naruto
@@ -107,7 +107,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ ${prefix}leave
 ❉ ╰───────────────
 ❉ ❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉
- o loli_senpai é grátis somente no grupo otakus sem curso se quiser contratar para seu grupo chame no PV da Loli 
+ Loli_senpai > gratis somente no grupo otakus sem curso se quiser contratar para seu grupo chame no PV da Loli 
 ❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉
 }
 
