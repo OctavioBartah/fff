@@ -1224,7 +1224,7 @@ const getRegisteredRandomId = () => {
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'fofa'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '190'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply(' *ERRO* ')
