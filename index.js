@@ -1344,7 +1344,7 @@ const getRegisteredRandomId = () => {
 // only grup fitur anime
               case 'anime':
                 if (isBanned) return reply(mess.only.benned)    
-                if (!isUser) return reply(mess.only.userB)
+     //           if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
                 if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=${TobzApi}`, {method: 'get'})
@@ -1355,7 +1355,7 @@ const getRegisteredRandomId = () => {
 					break  
 				case 'animekiss':
                 if (isBanned) return reply(mess.only.benned)    
-                if (!isUser) return reply(mess.only.userB)
+         //       if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
                 if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					anp = getRandom('.gif')
@@ -1372,7 +1372,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'naruto':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1385,7 +1385,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'minato':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1398,7 +1398,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'boruto':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1411,7 +1411,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'hinata':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1424,7 +1424,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'sasuke':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1437,7 +1437,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'sakura':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1451,7 +1451,7 @@ const getRegisteredRandomId = () => {
 
 				case 'yns':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1459,12 +1459,12 @@ const getRegisteredRandomId = () => {
 					kan = JSON.parse(JSON.stringify(anu));
 					eki =  kan[Math.floor(Math.random() * kan.length)];
 					nye = await getBuffer(eki)
-					client.sendMessage(from, nye, image, { caption: 'kaneki!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'yosuga no sora!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
 				case 'ngnl':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1472,12 +1472,12 @@ const getRegisteredRandomId = () => {
 					tou = JSON.parse(JSON.stringify(anu));
 					ka =  tou[Math.floor(Math.random() * tou.length)];
 					nye = await getBuffer(ka)
-					client.sendMessage(from, nye, image, { caption: 'toukachan!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'No game no life!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
 				case 'ichigo':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1485,12 +1485,12 @@ const getRegisteredRandomId = () => {
 					ri = JSON.parse(JSON.stringify(anu));
 					ze =  ri[Math.floor(Math.random() * ri.length)];
 					nye = await getBuffer(ze)
-					client.sendMessage(from, nye, image, { caption: 'rize chan!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'Ichigo!!', quoted: mek })
 					await limitAdd(sender) 	
 					break 
 				case 'kazuma':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1498,12 +1498,12 @@ const getRegisteredRandomId = () => {
 					ak = JSON.parse(JSON.stringify(anu));
 					ara =  ak[Math.floor(Math.random() * ak.length)];
 					nye = await getBuffer(ara)
-					client.sendMessage(from, nye, image, { caption: 'akira chan!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'kazuma!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
 				case 'ash':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1511,7 +1511,7 @@ const getRegisteredRandomId = () => {
 					it = JSON.parse(JSON.stringify(anu));
 					ori =  it[Math.floor(Math.random() * it.length)];
 					nye = await getBuffer(ori)
-					client.sendMessage(from, nye, image, { caption: 'itori chan!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'ash...', quoted: mek })
 					await limitAdd(sender) 
 					break 
 				case 'yaoi':
@@ -1524,7 +1524,7 @@ const getRegisteredRandomId = () => {
 					kur = JSON.parse(JSON.stringify(anu));
 					imi =  kur[Math.floor(Math.random() * kur.length)];
 					nye = await getBuffer(imi)
-					client.sendMessage(from, nye, image, { caption: 'kurumi chan!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'yaoi!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
 				case 'miku':
