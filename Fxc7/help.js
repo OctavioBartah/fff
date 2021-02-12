@@ -9,22 +9,6 @@ https://www.instagram.com/lordescreamocanal/
 \`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
 \`\`\`USANDO O BOT\`\`\`
 
-╭──────「 *REGULAMENTO ${name}* 」
-┴
-┣⊱  \`\`\`NOMA USUARIO:\`\`\` *${pushname2}*
-┣⊱  \`\`\`VERIFICACAO:\`\`\` ✅
-┣⊱  \`\`\`LIMITE:\`\`\` *${limitt}*
-┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
-┣⊱  \`\`\`HORA:\`\`\` *${jam} WIB*
-┣⊱  \`\`\`ENCONTRO:\`\`\` *${tanggal}*
-┣⊱  \`\`\`VERSAO:\`\`\` *6.5.0*
-┣⊱  \`\`\`USUARIO REGISTRADO:\`\`\` *${user.length} User*
-┣⊱  ❌ *SPAM*
-┣⊱  ❌ *CALL & VC*
-┣⊱  \`\`\`Quebra??\`\`\` *Banido*
-┬
-╰────────────────────────
-
 
 ╭──────「 *SOBRE ${name}* 」
 ┴
