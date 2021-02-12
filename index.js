@@ -68,12 +68,12 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD'
 
 prefix = "_"
-name = "~ SCREAMO | B O T"
+name = "~ Loli_Senpai | B O T"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
-rmenu = "Olá amigos do LORDEBOT👋"
+rmenu = "Olá amigos da LOLIBOT👋"
 limitt = 50
 ban = []
-userpremium = ["821074417113@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["5511963386276@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -117,7 +117,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Ola @${num.split('@')[0]}\nBem vindo (a) ☕ *${mdata.subject}*`
+				teks = `Ola @${num.split('@')[0]}\nBem vindo (a) ao grupo ☕ *${mdata.subject}\nLeia as regras e divirta-se*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -127,7 +127,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Tchau e nao volte @${num.split('@')[0]}👋`
+				teks = `Adeus @${num.split('@')[0]}\nAqui so fica os fortes👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -158,7 +158,7 @@ const getRegisteredRandomId = () => {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const FarhanGans = ["821074417113@s.whatsapp.net"] // apenas mude esta tudo bem
+			const FarhanGans = ["5511963386276@s.whatsapp.net"] // apenas mude esta tudo bem
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -179,10 +179,10 @@ const getRegisteredRandomId = () => {
 			
 
 			mess = {
-				wait: '*⏳ 𝗰𝗮𝗹𝗺𝗮 𝗮í 𝗺𝗮𝗻𝗼 𝘁𝗼𝗺𝗲 𝘂𝗺 𝗰𝗮𝗳é☕𝗲 𝘂𝗺 𝗯𝗶𝘀𝗰𝗼𝗶𝘁𝗼 🥯 𝗽𝗼𝗿 𝗲𝗻𝗾𝘂𝗮𝗻𝘁𝗼...*',
+				wait: '*⏳ 𝗰𝗮𝗹𝗺𝗮 𝗮í, 𝘁𝗼𝗺𝗲 𝘂𝗺 𝗰𝗮𝗳é☕𝗲 𝘂𝗺 𝗯𝗶𝘀𝗰𝗼𝗶𝘁𝗼 🥯 𝗽𝗼𝗿 𝗲𝗻𝗾𝘂𝗮𝗻𝘁𝗼...*',
 				success: '*ꜱᴜceꜱꜱo...*',
 				error: {
-					stick: ' *𝙢𝙖𝙣𝙤 𝙙𝙚𝙪 𝙧𝙪𝙞𝙢 𝙖𝙤 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙧 𝙖 𝙞𝙢𝙖𝙜𝙚𝙢 𝙚𝙢 𝙨𝙩𝙞𝙘𝙠𝙚𝙧 *',
+					stick: ' *𝙙𝙚𝙪 𝙧𝙪𝙞𝙢 𝙖𝙤 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙧 𝙖 𝙞𝙢𝙖𝙜𝙚𝙢 𝙚𝙢 𝙨𝙩𝙞𝙘𝙠𝙚𝙧 *',
 					Iv: '*𝙚𝙨𝙨𝙚 𝙡𝙞𝙣𝙠 𝙣𝙖𝙤 𝙫𝙖𝙡𝙚 !!*'
 				},
 				only: {
@@ -225,7 +225,7 @@ const getRegisteredRandomId = () => {
             ]
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["821074417113@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["5511963386276@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -3222,7 +3222,7 @@ const getRegisteredRandomId = () => {
             break
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Desculpa Mano *${pushname2}*, Comando *${prefix}${command}* Nao Listado Dentro *${prefix}menu*`)
+                  reply(`Desculpa *${pushname2}*, Comando *${prefix}${command}* Nao Listado`)
                   }
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
