@@ -15,7 +15,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉      
 ❉      ❉ *MENU* ❉
 ❉
-❉ ╭─❉ *MIDIA DOWNLOAD* ❉────
+❉  ╭─❉ *MIDIA DOWNLOAD* ❉────
 ❉  |
 ❉  |➻ *${prefix}meme*
 ❉  |➻ *${prefix}memeindo*
