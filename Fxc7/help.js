@@ -37,7 +37,6 @@ https://www.instagram.com/lordescreamocanal/
 │➻ *${prefix}totaluser*
 │➻ *${prefix}grouplist*
 │➻ *${prefix}blocklist*
-│➻ *${prefix}banlist*
 │➻ *${prefix}premiumlist*
 │➻ *${prefix}bahasa*
 ┬
