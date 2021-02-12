@@ -2266,7 +2266,7 @@ const getRegisteredRandomId = () => {
 				break 
 				case 'url2img':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					tipelist = ['desktop','tablet','mobile']
 					if (args.length < 1) return reply('Que tipo mano?')
@@ -2282,7 +2282,7 @@ const getRegisteredRandomId = () => {
 					break 
 			    case 'tagall':
 			    if (isBanned) return reply(mess.only.benned)    
-			    if (!isUser) return reply(mess.only.userB)
+	//		    if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -2292,11 +2292,11 @@ const getRegisteredRandomId = () => {
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Marcando Os Corno Mais Famosos*${pushname2}* ✪══`+ teks +'╚═══〘 SCREAMO BOT 〙═══', members_id, true)
+					mentions(`╔═══✪ Marcando Os Queridinhos*${pushname2}* ✪══`+ teks +'╚═══〘 LOLI_SENPAI BOT 〙═══', members_id, true)
 					break
 			    case 'mentionall':
 			    if (isBanned) return reply(mess.only.benned)    
-			    if (!isUser) return reply(mess.only.userB)
+		//	    if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -2305,7 +2305,7 @@ const getRegisteredRandomId = () => {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 TIOCAFE BOT 〙', members_id, true)
+					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 LOLI_SENPAI BOT 〙', members_id, true)
 					break
 			    case 'kbbi':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -2397,7 +2397,7 @@ const getRegisteredRandomId = () => {
 					break
 				case 'add':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2413,7 +2413,7 @@ const getRegisteredRandomId = () => {
 					break
 			    case 'kick':
 			    if (isBanned) return reply(mess.only.benned)    
-			    if (!isUser) return reply(mess.only.userB)
+		//	    if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2433,11 +2433,11 @@ const getRegisteredRandomId = () => {
 					break
 				case 'edotense':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Esse é forte!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = 'Pedidos aceitos, no edo tensei :\n'
@@ -2454,7 +2454,7 @@ const getRegisteredRandomId = () => {
 				case 'promote':
 				case 'pm':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2481,7 +2481,7 @@ const getRegisteredRandomId = () => {
 					break
 			    case 'demote':
 			    if (isBanned) return reply(mess.only.benned)    
-			    if (!isUser) return reply(mess.only.userB)
+		//	    if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2504,7 +2504,7 @@ const getRegisteredRandomId = () => {
 				case 'adminlist':
 				case 'adminslist':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 					if (!isGroup) return reply(mess.only.group)
 					teks = `Lista dos ademiro do grupo *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					no = 0
