@@ -3,10 +3,8 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 	
 
 
-\`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
-\`\`\`USANDO O BOT\`\`\`
 
-❉  ╭──────「 *SOBRE ${name}* 」
+❉❉❉「 *${name}* 」❉❉❉
 ❉  ┴
 ❉  │➻ *${prefix}info*
 ❉  │➻ *${prefix}speed*
@@ -18,10 +16,8 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉  │➻ *${prefix}bahasa*
 ❉  ┬
 ❉  ╰────────────────────────
-
-❉❉❉ *LOLI_SENPAI* ❉❉❉
 ❉      
-❉      ❉ *Menu* ❉
+❉      ❉ *MENU* ❉
 ❉
 ❉ ╭─❉ *MIDIA DOWNLOAD* ❉────
 ❉  |
