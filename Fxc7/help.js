@@ -8,10 +8,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 
 ❉  ╭──────「 *SOBRE ${name}* 」
 ❉  ┴
-❉  │➻ *${prefix}report lapor bug* primeira git termux com antilink
 ❉  │➻ *${prefix}info*
-❉  │➻ *${prefix}donasi* mendingacao
-❉  │➻ *${prefix}owner*
 ❉  │➻ *${prefix}speed*
 ❉  │➻ *${prefix}daftar*
 ❉  │➻ *${prefix}totaluser*
@@ -34,7 +31,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉  |➻ *${prefix}ytmp4*
 ❉  |➻ *${prefix}ytmp3*
 ❉  |➻ *${prefix}playmp3*
-❉ ╰───────────────
+❉  ╰───────────────
 ❉
 ❉ ╭─❉ *CRIADOR MIDIA* ❉  ────
 ❉ │➻ *${prefix}sticker*
@@ -43,6 +40,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}img2url*
 ❉ │➻ *${prefix}nobg*
 ❉ │➻ *${prefix}tomp3*
+❉ |➻ *${prefix}tts + idioma + texto*
 ❉ │➻ *${prefix}ocr*     
 ❉ ╰────────────
 ❉
@@ -56,6 +54,12 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}sakura*
 ❉ │➻ *${prefix}sasuke*
 ❉ │➻ *${prefix}akira*
+❉ │➻ *${prefix}ichigo*
+❉ │➻ *${prefix}yns*
+❉ │➻ *${prefix}ngnl*
+❉ │➻ *${prefix}kazuma*
+❉ │➻ *${prefix}yaoi*
+❉ │➻ *${prefix}ash*
 ❉ │➻ *${prefix}itori*
 ❉ │➻ *${prefix}kurumi*
 ❉ │➻ *${prefix}anime*
