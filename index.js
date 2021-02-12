@@ -1449,78 +1449,78 @@ const getRegisteredRandomId = () => {
 					await limitAdd(sender) 
 					break 
 
-				case 'kaneki':
+				case 'yns':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=kaneki`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=yosuganosora+sora`, {method: 'get'})
 					kan = JSON.parse(JSON.stringify(anu));
 					eki =  kan[Math.floor(Math.random() * kan.length)];
 					nye = await getBuffer(eki)
 					client.sendMessage(from, nye, image, { caption: 'kaneki!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-				case 'toukachan':
+				case 'ngnl':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+touka`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=nogamenolife+sora`, {method: 'get'})
 					tou = JSON.parse(JSON.stringify(anu));
 					ka =  tou[Math.floor(Math.random() * tou.length)];
 					nye = await getBuffer(ka)
 					client.sendMessage(from, nye, image, { caption: 'toukachan!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-				case 'rize':
+				case 'ichigo':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+rize`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=ichigo`, {method: 'get'})
 					ri = JSON.parse(JSON.stringify(anu));
 					ze =  ri[Math.floor(Math.random() * ri.length)];
 					nye = await getBuffer(ze)
 					client.sendMessage(from, nye, image, { caption: 'rize chan!!', quoted: mek })
 					await limitAdd(sender) 	
 					break 
-				case 'akira':
+				case 'kazuma':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+akira`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=konosuba+kazuma`, {method: 'get'})
 					ak = JSON.parse(JSON.stringify(anu));
 					ara =  ak[Math.floor(Math.random() * ak.length)];
 					nye = await getBuffer(ara)
 					client.sendMessage(from, nye, image, { caption: 'akira chan!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-				case 'itori':
+				case 'ash':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+itori`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=ash+bananafish`, {method: 'get'})
 					it = JSON.parse(JSON.stringify(anu));
 					ori =  it[Math.floor(Math.random() * it.length)];
 					nye = await getBuffer(ori)
 					client.sendMessage(from, nye, image, { caption: 'itori chan!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-				case 'kurumi':
+				case 'yaoi':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+karumi`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=yaoi`, {method: 'get'})
 					kur = JSON.parse(JSON.stringify(anu));
 					imi =  kur[Math.floor(Math.random() * kur.length)];
 					nye = await getBuffer(imi)
@@ -1529,7 +1529,7 @@ const getRegisteredRandomId = () => {
 					break 
 				case 'miku':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
@@ -1544,7 +1544,7 @@ const getRegisteredRandomId = () => {
 
 				case 'anjing':
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anjing`, {method: 'get'})
 					reply(mess.wait)
@@ -1556,7 +1556,7 @@ const getRegisteredRandomId = () => {
 					break 
                 case 'resepmasakan':
                 if (isBanned) return reply(mess.only.benned)    
-                if (!isUser) return reply(mess.only.userB)
+         //       if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
                 reply(mess.wait)
                    anu = await fetchJson(`https://api.vhtear.com/resepmasakan?query=${body.slice(12)}&apikey=${VthearApi}`, {method: 'get'})
@@ -1567,7 +1567,7 @@ const getRegisteredRandomId = () => {
                    break 
                case 'cersex':
                 if (isBanned) return reply(mess.only.benned)    
-                if (!isUser) return reply(mess.only.userB)
+      //          if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
                    anu = await fetchJson(`https://api.vhtear.com/cerita_sex&apikey=${VthearApi}`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
@@ -1579,7 +1579,7 @@ const getRegisteredRandomId = () => {
                    break 
               case 'cerpen':
                    if (isBanned) return reply(mess.only.benned)    
-                if (!isUser) return reply(mess.only.userB)
+     //           if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
                    anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/cerpen`, {method: 'get'})
                    cerpen = `• *Title:* ${anu.result.title}\n• *Pengarang:* ${anu.result.pengarang}\n• *Kategori:* ${anu.result.kategori}\n\n${anu.result.cerpen}`
@@ -1880,6 +1880,18 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, tigaa, image, {caption: 'Nih kak', quoted: mek})
 					await limitAdd(sender) 
 					break 
+					
+					  case 'herrypotter':
+                                case 'harrypotter':
+                                        var gh = body.slice(12)
+                                        if (args.length < 1) return reply(`onde estÃ¡ o texto hum\nExemplo: ${prefix}harrypotter ZeusBOT`)
+                                    //    if (!isUser) return reply(mess.only.userB)
+                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=harry_potter&text=${gh}&apikey=BotWeA`, {method: 'get'})
+                                        buffer = await getBuffer(anu.result)
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih kak gambarnya...'})
+                                        break
+					
+					
 					case 'croman':
                 if (!isUser) return reply(mess.only.userB)
                 if (isBanned) return reply(mess.only.benned)
@@ -2859,7 +2871,7 @@ const getRegisteredRandomId = () => {
                 
              case 'ytmp4':
     				if (isBanned) return reply(mess.only.benned)    
-    				if (!isUser) return reply(mess.only.userB)
+    				//if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
@@ -2875,7 +2887,7 @@ const getRegisteredRandomId = () => {
 
 				case 'ytmp3':
 					if (isBanned) return reply(mess.only.benned)    
-					if (!isUser) return reply(mess.only.userB)
+					//if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Cadê o url mano?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`http://itsmeikygans.my.id/ytmp3?apikey=${ItsApi}&url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
@@ -2891,7 +2903,7 @@ const getRegisteredRandomId = () => {
 
            case 'playmp3':
                 if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
                 reply(mess.wait)
                 play = body.slice(9)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
@@ -3053,7 +3065,7 @@ const getRegisteredRandomId = () => {
 		 case 'tomp3':
                 if (isBanned) return reply(mess.only.benned)    
                 if (isLimit(sender)) return reply(limitend(pushname2))
-				if (!isUser) return reply(mess.only.userB)
+		//		if (!isUser) return reply(mess.only.userB)
                 	client.updatePresence(from, Presence.composing) 
 					if (!isQuotedVideo) return reply('_*Responda o vídeo, mano!*_')
 					reply(mess.wait)
