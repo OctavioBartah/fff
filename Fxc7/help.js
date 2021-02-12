@@ -20,7 +20,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉  |➻ ${prefix}playmp3
 ❉ ╰───────────────
 ❉
-❉ ╭─❉ CRIADOR MÍDIA ❉  ────
+❉ ╭─❉ CRIADOR MIDIA ❉  ────
 ❉  | ➻ ${prefix}harrypotter CAFE
 ❉ │➻ ${prefix}stiker
 ❉ │➻ ${prefix}gifstiker
@@ -120,5 +120,4 @@ function kyun(seconds){
   var hours = Math.floor(seconds / (60*60));
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
-//  return `*${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik*`
 }
