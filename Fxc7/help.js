@@ -2,9 +2,30 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 	return `
 	
 
+
 \`\`\`INSTAGRAM OFFICIAL\`\`\`
+https://www.instagram.com/lordescreamocanal/
+
+
 \`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
 \`\`\`USANDO O BOT\`\`\`
+
+❉  ╭──────「 *REGULAMENTO ${name}* 」
+❉  ┴
+❉  ┣⊱  \`\`\`NOMA USUARIO:\`\`\` *${pushname2}*
+❉  ┣⊱  \`\`\`VERIFICACAO:\`\`\` ✅
+❉  ┣⊱  \`\`\`LIMITE:\`\`\` *${limitt}*
+❉  ┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
+❉  ┣⊱  \`\`\`HORA:\`\`\` *${jam} WIB*
+❉  ┣⊱  \`\`\`ENCONTRO:\`\`\` *${tanggal}*
+❉  ┣⊱  \`\`\`VERSAO:\`\`\` *6.5.0*
+❉  ┣⊱  \`\`\`USUARIO REGISTRADO:\`\`\` *${user.length} User*
+❉  ┣⊱  ❌ *SPAM*
+❉  ┣⊱  ❌ *CALL & VC*
+❉  ┣⊱  \`\`\`Quebra??\`\`\` *Banido*
+❉  ┬
+❉  ╰────────────────────────
+
 
 ❉❉❉ LOLI_SENPAI ❉❉❉
 ❉        
@@ -120,4 +141,5 @@ function kyun(seconds){
   var hours = Math.floor(seconds / (60*60));
   var minutes = Math.floor(seconds % (60*60) / 60);
   var seconds = Math.floor(seconds % 60);
+return `*${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik*`
 }
