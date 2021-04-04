@@ -269,23 +269,6 @@ const getRegisteredRandomId = () => {
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
 			
-			const checkLimit = (sender) => {
-                let found = false
-                    for (let lmt of _limit) {
-                        if (lmt.id === sender) {
-                            limitCounts = limitt - lmt.limit
-                            if (limitCounts <= 0) return client.sendMessage(from,`Limit request anda sudah habis\n\n_Note : Limit akan direset setiap jam 21:00!_`, text,{ quoted: mek})
-                            client.sendMessage(from, limitcount(limitCounts), text, { quoted : mek})
-                            found = true
-                        }
-                    }
-                    if (found === false) {
-                        let obj = { id: sender, limit: 1 }
-                        _limit.push(obj)
-                        fs.writeFileSync('./database/json/limit.json', JSON.stringify(_limit))
-                        client.sendMessage(from, limitcount(limitCounts), text, { quoted : mek})
-                    }
-                                }
 
            const isLimit = (sender) =>{
                       let position = false
