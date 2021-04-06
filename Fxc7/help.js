@@ -51,6 +51,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}kazuma*
 ❉ │➻ *${prefix}yaoi*
 ❉ │➻ *${prefix}ash*
+❉ │➻ *${prefix}shota*
 ❉ │➻ *${prefix}anime*
 ❉ │➻ *${prefix}animecry*
 ❉ │➻ *${prefix}neonime*
