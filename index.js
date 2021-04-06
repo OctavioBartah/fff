@@ -1367,6 +1367,21 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
 					await limitAdd(sender)
 					break 
+					
+					case 'shota':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Shota`, {method: 'get'})
+					naru = JSON.parse(JSON.stringify(anu));
+					to =  naru[Math.floor(Math.random() * naru.length)];
+					nye = await getBuffer(to)
+					client.sendMessage(from, nye, image, { caption: '190!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+					
 				case 'minato':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
