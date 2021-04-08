@@ -1199,21 +1199,21 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, ssweb, image, {quoted: mek})
 					await limitAdd(sender)
 					break 
-				case 'loli':
-				    try {
-				    if (isBanned) return reply(mess.only.benned)    
+//				case 'loli':
+//				    try {
+//				    if (isBanned) return reply(mess.only.benned)    
 			//	    if (!isUser) return reply(mess.only.userB)
-				    if (isLimit(sender)) return reply(limitend(pushname2))
-						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${TobzApi}`, {method: 'get'})
-						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '190'})
-					} catch (e) {
-						console.log(`Error :`, color(e,'red'))
-						reply(' *ERRO* ')
-					}
-					await limitAdd(sender)
-					break 
+//				    if (isLimit(sender)) return reply(limitend(pushname2))
+//						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
+//						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${TobzApi}`, {method: 'get'})
+//						buffer = await getBuffer(res.result)
+//						client.sendMessage(from, buffer, image, {quoted: mek, caption: '190'})
+//					} catch (e) {
+//						console.log(`Error :`, color(e,'red'))
+//						reply(' *ERRO* ')
+//					}
+//					await limitAdd(sender)
+//					break 
 			    case 'blowjob':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
@@ -1395,6 +1395,50 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
 					await limitAdd(sender)
 					break 
+					
+				case 'loli':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=kawaii-loli`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+					
+					
+				case 'yuri':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=yuri`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+					
+				case 'neko':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=neko`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+					
 				case 'boruto':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
