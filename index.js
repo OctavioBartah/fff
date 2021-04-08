@@ -73,7 +73,7 @@ rdaftar = "OBRIGADO POR SE REGISTRAR😁"
 rmenu = "Olá amigos da LOLIBOT👋"
 limitt = 50
 ban = []
-userpremium = ["5511963386276@s.whatsapp.net"] //ubah nomer kalian
+userpremium = [] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -1406,7 +1406,7 @@ const getRegisteredRandomId = () => {
 					min = JSON.parse(JSON.stringify(anu));
 					ato =  min[Math.floor(Math.random() * min.length)];
 					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'loli!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 					
@@ -1421,7 +1421,7 @@ const getRegisteredRandomId = () => {
 					min = JSON.parse(JSON.stringify(anu));
 					ato =  min[Math.floor(Math.random() * min.length)];
 					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'yuri!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 					
@@ -1435,7 +1435,7 @@ const getRegisteredRandomId = () => {
 					min = JSON.parse(JSON.stringify(anu));
 					ato =  min[Math.floor(Math.random() * min.length)];
 					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'neko!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 					
@@ -1449,7 +1449,7 @@ const getRegisteredRandomId = () => {
 					min = JSON.parse(JSON.stringify(anu));
 					ato =  min[Math.floor(Math.random() * min.length)];
 					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: 'trap!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 					
