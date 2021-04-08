@@ -58,8 +58,8 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}animekiss*
 ❉ │➻ *${prefix}nsfw On/Off*
 ❉ │➻ *${prefix}loli*
-❉ │➻ *${prefix}blowjob*
 ❉ │➻ *${prefix}neko*
+❉ │➻ *${prefix}yuri*
 ❉ │➻ *${prefix}trap*
 ❉ │➻ *${prefix}hentai*
 ❉ │➻ *${prefix}simih On/Off*
