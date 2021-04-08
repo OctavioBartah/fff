@@ -1230,38 +1230,38 @@ const getRegisteredRandomId = () => {
 					}
 					await limitAdd(sender)
 					break 
-			    case 'neko':
-				    try {
-				    if (isBanned) return reply(mess.only.benned)    
+//			    case 'neko':
+//				    try {
+//				    if (isBanned) return reply(mess.only.benned)    
 			//	    if (!isUser) return reply(mess.only.userB)
-								if (!isGroupAdmins) return reply(mess.only.admin)		    
-				    if (isLimit(sender)) return reply(limitend(pushname2))
-						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${TobzApi}`, {method: 'get'})
-						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tai safado'})
-					} catch (e) {
-						console.log(`Error :`, color(e,'red'))
-						reply(' *ERROR* ')
-					}
-					await limitAdd(sender) 
-					break 
-				case 'trap':
-				    try {
-				    if (isBanned) return reply(mess.only.benned)    
+//								if (!isGroupAdmins) return reply(mess.only.admin)		    
+//				    if (isLimit(sender)) return reply(limitend(pushname2))
+//						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
+//						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${TobzApi}`, {method: 'get'})
+//						buffer = await getBuffer(res.result)
+//						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tai safado'})
+//					} catch (e) {
+//						console.log(`Error :`, color(e,'red'))
+//						reply(' *ERROR* ')
+//					}
+//					await limitAdd(sender) 
+//					break 
+//				case 'trap':
+//				    try {
+//				    if (isBanned) return reply(mess.only.benned)    
 			//	    if (!isUser) return reply(mess.only.userB)
-		                	if (!isGroupAdmins) return reply(mess.only.admin)
-				    if (isLimit(sender)) return reply(limitend(pushname2))
-						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR * ')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=${TobzApi}`, {method: 'get'})
-						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tai safado'})
-					} catch (e) {
-						console.log(`Error :`, color(e,'red'))
-						reply(' *ERROR* ')
-					}
-					await limitAdd(sender) 
-					break 
+//		                	if (!isGroupAdmins) return reply(mess.only.admin)
+//				    if (isLimit(sender)) return reply(limitend(pushname2))
+//						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR * ')
+//						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=${TobzApi}`, {method: 'get'})
+//						buffer = await getBuffer(res.result)
+//						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'tai safado'})
+//					} catch (e) {
+//						console.log(`Error :`, color(e,'red'))
+//						reply(' *ERROR* ')
+//					}
+//					await limitAdd(sender) 
+//					break 
 				case 'hentai':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
@@ -1438,6 +1438,21 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
 					await limitAdd(sender)
 					break 
+					
+				case 'trap':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=trap-anime`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+					
 					
 				case 'boruto':
 				if (isBanned) return reply(mess.only.benned)    
