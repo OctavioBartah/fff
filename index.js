@@ -224,7 +224,7 @@ const getRegisteredRandomId = () => {
             ]
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5573999881974@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["557399881974@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
