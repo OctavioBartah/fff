@@ -70,7 +70,7 @@ prefix = "_"
 name = "~ Loli_Senpai | B O T"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
 rmenu = "Olá amigos da LOLIBOT👋"
-limitt = 1000
+limitt = 100000
 ban = []
 userpremium = [] //ubah nomer kalian
 
