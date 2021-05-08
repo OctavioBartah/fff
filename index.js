@@ -600,108 +600,6 @@ const getRegisteredRandomId = () => {
 					await limitAdd(sender) 
 					break 
 					
-				case 'img2url':
-           if (!isUser) return reply(mess.only.userB)
-			if (isBanned) return reply(mess.only.benned)
-			if (isLimit(sender)) return reply(limitend(pushname2))
-					reply(mess.wait)
-            var encmedia  = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-            var media = await  client.downloadAndSaveMediaMessage(encmedia)
-           const imgbb = require('imgbb-uploader')
-            imgbb('727e7e43f6cda1dfb85d888522fd4ce1', media)
-                .then(data => {
-                    var caps = `「 *IMAGE TO URL* 」\n\n*╠➥  ID :* ${data.id}\n*╠➥  MimeType :* ${data.image.mime}\n*╠➥  Extension :* ${data.image.extension}\n\n*╠➥  URL :* ${data.display_url}`
-                    ibb = fs.readFileSync(media)
-                     client.sendMessage(from, ibb, image, { quoted: mek, caption: caps })
-                })
-                .catch(err => {
-                    throw err
-                })
-            await limitAdd(sender) 	
-            break  
-
-					case 'trigger':
-                        if (!isUser) return reply(mess.only.userB)
-                        if (isBanned) return reply (mess.only.benned)
-                        if (isLimit(sender)) return reply(limitend(pushname2))
-                         if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-                         ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-                         reply(mess.wait)
-                         owgi = await  client.downloadAndSaveMediaMessage(ger)
-                         imgbb = require('imgbb-uploader')
-                         anu = await imgbb("727e7e43f6cda1dfb85d888522fd4ce1", owgi)
-                        teks = `${anu.display_url}`
-                        ranp = getRandom('.gif')
-                        rano = getRandom('.webp')
-                        anu1 = `https://some-random-api.ml/canvas/triggered?avatar=${teks}`
-                         exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-                                fs.unlinkSync(ranp)
-                                if (err) return reply(mess.error.stick)
-                                nobg = fs.readFileSync(rano)
-                                 client.sendMessage(from, nobg, sticker, {quoted: mek})
-                                fs.unlinkSync(rano)
-                        })
-                    
-                             } else {
-                                 reply('Use uma foto!')
-                          }
-                          await limitAdd(sender) 
-                          break  
-                   case 'wasted':
-                                        if (!isUser) return reply(mess.only.userB)
-                                        if (isBanned) return reply(mess.only.benned)
-                                        if (isLimit(sender)) return reply(limitend(pushname2))
-                                         if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-                                         ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-                                         reply(mess.wait)
-                                         owgi = await  client.downloadAndSaveMediaMessage(ger)
-                                         imgbb = require('imgbb-uploader')
-                                         anu = await imgbb("727e7e43f6cda1dfb85d888522fd4ce1", owgi)
-                                        teks = `${anu.display_url}`
-                                        ranp = getRandom('.png')
-                                        rano = getRandom('.webp')
-                                        anu1 = `https://some-random-api.ml/canvas/wasted?avatar=${teks}`
-                                         exec(`wget ${anu1} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-                                                fs.unlinkSync(ranp)
-                                                if (err) return reply(mess.error.stick)
-                                                nobg = fs.readFileSync(rano)
-                                                 client.sendMessage(from, nobg, sticker, {quoted: mek})
-                                                fs.unlinkSync(rano)
-                                        })
-                                    
-                                             } else {
-                                                 reply('Use uma foto!')
-                                          }
-                                          await limitAdd(sender) 
-                                          break  
-                        
-                 case 'kalkulator':
-					if (isBanned) return reply(mess.only.benned)    
-				   if (!isUser) return reply(mess.only.userB)
-				   if (isLimit(sender)) return reply(limitend(pushname2))
-				     if (args.length < 1) return reply(`[❗] Enviar pedidos *${prefix}kalkulator [ Angka ]*\nContoh : ${prefix}kalkulator 12*12\n*NOTA* :\n- Untuk Perkalian Menggunakan *\n- Untuk Pertambahan Menggunakan +\n- Untuk Pengurangan Mennggunakan -\n- Untuk Pembagian Menggunakan /`)
-				    mtk = `${body.slice(12)}`
-				    anu = await fetchJson(`https://api.vhtear.com/calculator?value=${mtk}&apikey=${VthearApi}`, {method: 'get'})
-				    client.sendMessage(from, `*${anu.result.data}*`, text, {quoted: mek})
-				    await limitAdd(sender) 	
-				    break 
-				case 'ouuudwner':
-                 client.sendMessage(from, {displayname: "Fxc7", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'Jika Mau Save Chat Aja Gan Ntar Disave Back:)',text, { quoted: mek} )
-                 break
-                 case 'fitnah':	
-				case 'fake':          
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-                    if (!isGroup) return reply(mess.only.group)
-                    arg = body.substring(body.indexOf(' ') + 1)
-				    isi = arg.split('/')[0] 
-			        pesan = arg.split('/')[1] 
-				    pesan2 = arg.split('/')[2] 
-                    costum(pesan, isi, pesan2)
-                    await limitAdd(sender) 
-                    break 
 
 				case 'infogc':
 				case 'groupinfo':
@@ -716,30 +614,8 @@ const getRegisteredRandomId = () => {
 			    buffer = await getBuffer(ppUrl)
 		        client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
                 break
-				case 'trendtwit':
-					client.updatePresence(from, Presence.composing) 
-                     if (!isUser) return reply(mess.only.userB)
-                     if (isLimit(sender)) return reply(limitend(pushname2))
-					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/trendingtwitter`, {method: 'get'})
-					reply(mess.wait)
-					teks = '=================\n'
-					for (let i of data.result) {
-						teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
-					}
-					reply(teks.trim())
-					await limitAdd(sender) 
-					break 
-				case 'testime':
-					setTimeout( () => {
-					client.sendMessage(from, 'Waktu habis:v', text, {quoted: mek}) // ur cods
-					}, 10000) // 1000 = 1s,
-					setTimeout( () => {
-					client.sendMessage(from, '5 Detik lagi', text, {quoted: mek}) // ur cods
-					}, 5000) // 1000 = 1s,
-					setTimeout( () => {
-					client.sendMessage(from, '10 Detik lagi', text, {quoted: mek}) // ur cods
-					}, 0) // 1000 = 1s,
-					break 
+
+				
 				case 'animecry':
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
@@ -759,64 +635,11 @@ const getRegisteredRandomId = () => {
 					})
 					await limitAdd(sender) 
 					break 
-				case 'neonime':
-					client.updatePresence(from, Presence.composing) 
-					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/neonime_lastest`, {method: 'get'})
-             //       if (!isUser) return reply(mess.only.userB)
-                    if (isLimit(sender)) return reply(limitend(pushname2))
-                    if (isBanned) return reply(mess.only.benned)
-                    if (!isGroup) return reply(mess.only.group)
-                    reply(mess.wait)
-					teks = '################\n'
-					for (let i of data.result) {
-						teks += `*Tilulo* : ${i.judul}\n*link* : ${i.link}\n*rilis* : ${i.rilis}\n###############\n`
-					}
-					reply(teks.trim())
-					await limitAdd(sender) 
-					break   
-				case 'wink':
-					wink = getRandom('.gif')
-					rano = getRandom('.webp')
-					anu = await fetchJson(`https://api.i-tech.id/tools/wink?key=${TechApi}`, {method: 'get'})
-                   if (!isUser) return reply(mess.only.userB)
-                   if (isLimit(sender)) return reply(limitend(pushname2))
-                   if (isBanned) return reply(mess.only.benned)
-                   if (!isGroup) return reply(mess.only.group)
-					if (anu.error) return reply(anu.error)
-					reply (mess.wait)
-					exec(`wget ${anu.result} -O ${wink} && ffmpeg -i ${wink} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(wink)
-						if (err) return reply(mess.error.stick)
-						buffer = fs.readFileSync(rano)
-						client.sendMessage(from, buffer, sticker, {quoted: mek})
-						fs.unlinkSync(rano)
-					})
-					await limitAdd(sender) 
-					break 
-				case 'imoji':
-					if (args.length < 1) return reply('onde estão os emojis mano?')
-                    if (!isUser) return reply(mess.only.userB)
-                    if (isLimit(sender)) return reply(limitend(pushname2))
-                   if (isBanned) return reply(mess.only.benned)
-					moji = getRandom('.png')
-					rano = getRandom('.webp')
-					teks = emojiUnicode(Far).trim()
-					anu = await getBuffer(`https://mhankbarbars.tech/api/emoji2png?emoji=${teks}&apikey=${BarBarApi}`, {method: 'get'})
-					exec(`wget ${anu} -O ${moji} && ffmpeg -i ${moji} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(moji)
-						if (err) return reply(mess.error.stick)
-						buffer = fs.readFileSync(rano)
-						client.sendMessage(from, buffer, sticker)
-						fs.unlinkSync(rano)
-					})
-					await limitAdd(sender) 
-					break 
 					
 					case 'animehug':
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/hug?apikey=${TobzApi}`, {method: 'get'})
-          //         if (!isUser) return reply(mess.only.userB)
                    if (isLimit(sender)) return reply(limitend(pushname2))
                    if (isBanned) return reply(mess.only.benned)
                    if (!isGroup) return reply(mess.only.group)
@@ -844,44 +667,8 @@ const getRegisteredRandomId = () => {
 				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink do Grupo *${groupName}*`
 				    client.sendMessage(from, yeh, text, {quoted: mek})
 			        break
-				case 'hidetag':
-				if (isBanned) return reply(mess.only.benned)    
-			//	if (!isUser) return reply(mess.only.userB)
-					if (!isGroup) return reply(mess.only.group)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					var value = body.slice(9)
-					var group = await client.groupMetadata(from)
-					var member = group['participants']
-					var mem = []
-					member.map( async adm => {
-					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
-					})
-					var options = {
-					text: value,
-					contextInfo: { mentionedJid: mem },
-					quoted: mek
-					}
-					client.sendMessage(from, options, text)
-					break
-				case 'gantengcek':
-				case 'cekganteng':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-					ganteng = body.slice(12)
-					const gan =['10%','30%','20%','40%','50%','60%','70%','62%','74%','83%','97%','100%','29%','94%','75%','82%','41%','39%']
-					const teng = gan[Math.floor(Math.random() * gan.length)]
-					client.sendMessage(from, 'Pertanyaan : Cek Ganteng Bang *'+ganteng+'*\n\nJawaban : '+ teng +'', text, { quoted: mek })
-					break
-				case 'cantikcek':
-				case 'cekcantik':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-					cantik = body.slice(11)
-					if (args.length < 1) return reply('Yg Mau dicek Siapa Kak??')
-					const can =['10% banyak" perawatan ya kak:v\nCanda Perawatan:v','30% Semangat Kaka Merawat Dirinya><','20% Semangat Ya Kaka👍','40% Wahh Kaka><','50% kaka cantik deh><','60% Ei linda🐊','70% Oi ukhty🐊','62% Kakak Cantik><','74% Kakak ni cantik deh><','83% Love You Kakak><','97% Assalamualaikum Ukhty🐊','100% Kakak Pake Susuk ya??:v','29% Semangat Kakak:)','94% Ei linda><','75% Oi irmão lindo','82% wihh Kakak Pasti Sering Perawatan kan??','41% Semangat:)','39% Lebih Semangat🐊']
-					const tik = can[Math.floor(Math.random() * can.length)]
-					client.sendMessage(from, 'Pertanyaan : Cantik Cek Kakak *'+cantik+'*\n\nPersen Kecantikan : '+ tik +'', text, { quoted: mek })
-					break
+
+
 				case 'ban':
 					client.updatePresence(from, Presence.composing) 
 					if (args.length < 1) return
