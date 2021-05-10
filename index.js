@@ -67,9 +67,9 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD'
 
 prefix = "_"
-name = "~ Loli_Senpai | B O T"
+name = "~ BELLA | B O T"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
-rmenu = "Olá amigos da LOLIBOT👋"
+rmenu = "Olá amigos da BELLABOT👋"
 limitt = 100000
 ban = []
 userpremium = [] //ubah nomer kalian
@@ -126,7 +126,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Adeus @${num.split('@')[0]}\nAqui so fica os fortes👋`
+				teks = `Já foi tarde @${num.split('@')[0]}\nAqui so fica os fortes👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -1192,7 +1192,7 @@ const getRegisteredRandomId = () => {
 					min = JSON.parse(JSON.stringify(anu));
 					ato =  min[Math.floor(Math.random() * min.length)];
 					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'loli!!', quoted: mek })
+					client.sendMessage(from, nye, image, { caption: '190!!', quoted: mek })
 					await limitAdd(sender)
 					break 
 					
