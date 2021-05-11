@@ -1358,6 +1358,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'ash...', quoted: mek })
 					await limitAdd(sender) 
 					break 
+					
 				case 'yaoi':
 				if (isBanned) return reply(mess.only.benned)    
 		//		if (!isUser) return reply(mess.only.userB)
@@ -1370,7 +1371,9 @@ const getRegisteredRandomId = () => {
 					nye = await getBuffer(imi)
 					client.sendMessage(from, nye, image, { caption: 'yaoi!!', quoted: mek })
 					await limitAdd(sender) 
-				case 'bays':
+					break
+					
+				case 'boys':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
@@ -1382,7 +1385,8 @@ const getRegisteredRandomId = () => {
 					nye = await getBuffer(ku)
 					client.sendMessage(from, nye, image, { caption: '💕!!', quoted: mek })
 					await limitAdd(sender) 
-					break 	break 
+					break
+					
 case 'maid':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1396,6 +1400,7 @@ case 'maid':
 					client.sendMessage(from, nye, image, { caption: 'sim mestre!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
+					
 				case 'miku':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1423,6 +1428,7 @@ case 'nezuko':
 					client.sendMessage(from, nye, image, { caption: 'Humm humm!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
+					
 				case 'anjing':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
