@@ -1429,11 +1429,11 @@ case 'nezuko':
 					await limitAdd(sender) 
 					break 
 					
-				case 'anjing':
+				case 'pets':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=anjing`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=Pets-fofos`, {method: 'get'})
 					reply(mess.wait)
 					n = JSON.parse(JSON.stringify(anu));
 					nimek =  n[Math.floor(Math.random() * n.length)];
