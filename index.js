@@ -1240,26 +1240,26 @@ const getRegisteredRandomId = () => {
 					break 
 					
 					
-				case 'boruto':
-				if (isBanned) return reply(mess.only.benned)    
-			//	if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
-					reply(mess.wait)
-					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=Boruto`, {method: 'get'})
-					bor = JSON.parse(JSON.stringify(anu));
-					uto =  bor[Math.floor(Math.random() * bor.length)];
-					nye = await getBuffer(uto)
-					client.sendMessage(from, nye, image, { caption: 'boruto!!', quoted: mek })
-					await limitAdd(sender)
-					break 
-				case 'hinata':
+				case hinata':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
 					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=Hinata`, {method: 'get'})
+					bor = JSON.parse(JSON.stringify(anu));
+					uto =  bor[Math.floor(Math.random() * bor.length)];
+					nye = await getBuffer(uto)
+					client.sendMessage(from, nye, image, { caption: 'hinata!!', quoted: mek })
+					await limitAdd(sender)
+					break 
+				case 'h':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=`, {method: 'get'})
 					hina = JSON.parse(JSON.stringify(anu));
 					ta =  hina[Math.floor(Math.random() * hina.length)];
 					nye = await getBuffer(ta)
