@@ -18,7 +18,6 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉  ╭─❉ *MIDIA DOWNLOAD* ❉────
 ❉  |
 ❉  |➻ *${prefix}meme*
-❉  |➻ *${prefix}memeindo*
 ❉  |➻ *${prefix}wait*
 ❉  |➻ *${prefix}ytmp4*
 ❉  |➻ *${prefix}ytmp3*
@@ -41,7 +40,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}modeanime On/Off*
 ❉ │➻ *${prefix}naruto*
 ❉ │➻ *${prefix}minato*
-❉ │➻ *${prefix}boruto*
+❉ │➻ *${prefix}zoro*
 ❉ │➻ *${prefix}hinata*
 ❉ │➻ *${prefix}sakura*
 ❉ │➻ *${prefix}sasuke*
@@ -53,9 +52,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}ash*
 ❉ │➻ *${prefix}shota*
 ❉ │➻ *${prefix}anime*
-❉ │➻ *${prefix}animecry*
-❉ │➻ *${prefix}neonime*
-❉ │➻ *${prefix}animekiss*
+❉ │➻ *${prefix}pets*
 ❉ │➻ *${prefix}nsfw On/Off*
 ❉ │➻ *${prefix}boys*
 ❉ │➻ *${prefix}maid*
