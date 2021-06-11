@@ -1112,7 +1112,7 @@ const getRegisteredRandomId = () => {
 
 
 // only grup fitur anime
-              case 'anime':
+              case 'a':
                 if (isBanned) return reply(mess.only.benned)    
      //           if (!isUser) return reply(mess.only.userB)
                 if (isLimit(sender)) return reply(limitend(pushname2))
@@ -1195,7 +1195,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: '190!!', quoted: mek })
 					await limitAdd(sender)
 					break 
-					
+				case 'zoro':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=zoro-one-piece`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'zoro!!', quoted: mek })
+					await limitAdd(sender)
+					break					
 					
 				case 'yuri':
 				if (isBanned) return reply(mess.only.benned)    
@@ -1238,7 +1250,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'trap!!', quoted: mek })
 					await limitAdd(sender)
 					break 
-					
+				case 'anime':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=animes`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					client.sendMessage(from, nye, image, { caption: 'animes!!', quoted: mek })
+					await limitAdd(sender)
+					break					
 					
 				case hinata':
 				if (isBanned) return reply(mess.only.benned)    
