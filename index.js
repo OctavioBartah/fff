@@ -2156,17 +2156,8 @@ case 'nezuko':
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek, caption: 'Nih Gan'})
 					await limitAdd(sender) 
 					break 
-            case 'ytmp3':
-                yt = await axios.get(`https://api-gdr.herokuapp.com/api/yta?url=${body.slice(7)}`)
-                var { ext, filesize, result, thumb, title } = yt.data
-                foto = await getBuffer(thumb)
-                if (Number(filesize.split(' MB')[0]) >= 30.00) return vinicius.sendMessage(from, foto, MessageType.image, {caption: `Title : ${title}\n\nExt : ${ext}\nLink : ${result}\n\nPassou de 30mb n baixo, é podcast?`})
-                cap = `Ytmp3 downloader\n\nTitle : ${title}\n\nExt : ${ext}\n\nFilesize : ${filesize}`
-                vinicius.sendMessage(from, foto, MessageType.image, {caption: cap})
-                au = await getBuffer(result)
-                vinicius.sendMessage(from, au, MessageType.audio, {mimetype: 'audio/mp4', filename: `${title}.mp3`, quoted: lin})
-                break
-				case '5':
+            
+				case 'ytmp3':
 					if (isBanned) return reply(mess.only.benned)    
 					//if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Cadê o url mano?')
