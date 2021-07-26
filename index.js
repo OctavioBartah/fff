@@ -1222,7 +1222,13 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'yuri!!', quoted: mek })
 					await limitAdd(sender)
 					break 
-					
+				case 'gado':
+			var chifre = ["ultra extreme gado", "Gado-Master", "Gado-Rei", "Gado", "Escravo-ceta", "Escravo-ceta Maximo", "Gacorno?", "Jogador De Forno Livre<3", "Mestre Do Frifai<3<3", "Gado-Manso", "Gado-Conformado", "Gado-Incubado", "Gado Deus", "Mestre dos Gados", "TPTDPBCT=Topa Tudo Por Buceta KKKJ", "Gado Comum", "Mini-Pedro", "Mini Gadinho", "Gado Iniciante", "Gado Basico", "Gado Intermediario", "Gado Avançado", "Gado Proffisional", "Gado Mestre", "Gado Chifrudo", "Corno Conformado", "Corno HiperChifrudo", "Chifrudo Deus", "Mestre dos Chifrudos"]
+			var gado = chifre[Math.floor(Math.random() * chifre.length)]
+			if (args.length == 1) {
+				await kauankkk.sendTextWithMentions(from, arqs[1] + ' é ' + lvpc + '% ' + gado + 'KKKKJ.')
+			} else { await kauankkk.reply(from, `Você é ` + 'lvpc' + '% ' + 'gado' + ' KKKKJ.', id.Mentioned) }
+			break					
 				case 'neko':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
