@@ -1242,7 +1242,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'neko!!', quoted: mek })
 					await limitAdd(sender)
 					break 
-					
+				case 'bjalex':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=bj-alex-personagens`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'bj-alex', quoted: mek })
+					await limitAdd(sender) 
+					break					
 				case 'trap':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1269,7 +1281,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'animes!!', quoted: mek })
 					await limitAdd(sender)
 					break					
-					
+				case 'gojo':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=gojo-satoru`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'gojo', quoted: mek })
+					await limitAdd(sender) 
+					break					
 				case 'hinata':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1322,7 +1346,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'sakuna!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-
+				case 'shigatsu':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=shigatsu-wa-kimi-no-uso`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'shigatsu', quoted: mek })
+					await limitAdd(sender) 
+					break
 				case 'mikasa':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1388,7 +1424,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'Nobara', quoted: mek })
 					await limitAdd(sender) 
 					break 
-					
+				case 'aizawa':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=shota-aizawa`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'Aizawa', quoted: mek })
+					await limitAdd(sender) 
+					break					
 				case 'yaoi':
 				if (isBanned) return reply(mess.only.benned)    
 		//		if (!isUser) return reply(mess.only.userB)
@@ -1402,7 +1450,19 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, nye, image, { caption: 'yaoi!!', quoted: mek })
 					await limitAdd(sender) 
 					break
-					
+				case 'sebastian':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=sebastian-michaelis`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'Sebastian', quoted: mek })
+					await limitAdd(sender) 
+					break					
 				case 'boys':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1430,7 +1490,19 @@ case 'maid':
 					client.sendMessage(from, nye, image, { caption: 'sim mestre!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-					
+				case 'sanji':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=vinsmoke-sanji`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'Sanji', quoted: mek })
+					await limitAdd(sender) 
+					break					
 				case 'miku':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
@@ -1458,7 +1530,19 @@ case 'nezuko':
 					client.sendMessage(from, nye, image, { caption: 'Humm humm!!', quoted: mek })
 					await limitAdd(sender) 
 					break 
-					
+				case 'zoro':
+				if (isBanned) return reply(mess.only.benned)    
+			//	if (!isUser) return reply(mess.only.userB)
+				if (isLimit(sender)) return reply(limitend(pushname2))
+					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
+					reply(mess.wait)
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest/?keyword=roronoa-zoro`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					client.sendMessage(from, nye, image, { caption: 'Zoro', quoted: mek })
+					await limitAdd(sender) 
+					break					
 				case 'pets':
 				if (isBanned) return reply(mess.only.benned)    
 			//	if (!isUser) return reply(mess.only.userB)
