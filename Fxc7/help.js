@@ -43,6 +43,13 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}luffy*
 ❉ │➻ *${prefix}hinata*
 ❉ │➻ *${prefix}sakuna*
+❉ │➻ *${prefix}aizawa*
+❉ │➻ *${prefix}sebastian*
+❉ │➻ *${prefix}Sanji*
+❉ │➻ *${prefix}zoro*
+❉ │➻ *${prefix}shigatsu*
+❉ │➻ *${prefix}gojo*
+❉ │➻ *${prefix}bjalex*
 ❉ │➻ *${prefix}levi*
 ❉ │➻ *${prefix}erza*
 ❉ │➻ *${prefix}mikasa*
@@ -110,7 +117,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉ │➻ *${prefix}leave*
 ❉ ╰───────────────
 ❉ ❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉
- *O loli_senpai é grátis somente no grupo otakus sem curso se quiser contratar para seu grupo chame no PV da Loli* 
+ *O bella-bot é grátis somente no grupo otakus sem curso se quiser contratar para seu grupo chame no PV da Loli* 
 ❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉❉`
 }
 
